@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="Author" content="" />
+<title>퍼블리싱 가이드</title>
+<meta name="Keywords" content="Wizbl" />
+<meta name="Description" content="Wizbl" />
+<meta name="Author" content="" />
+
+<!-- link -->
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<link rel="stylesheet" type="text/css" href="css/gyu.css" />
+
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+<![endif]-->
+<!-- script -->
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+
+
+<div id="wrap">
+
+	<header id="header" class="header">
+		<h1 class="logo"><a href="#"><img src="images/common/logo.png" alt="wizbl" /></a></h1>
+				
+		<div class="right">
+			<div class="t1"><span class="i"><img src="images/common/img_mem.jpg" alt="" /></span><span class="t">ABCDEFG (홍길동)</span></div>
+			<a href="#">PW수정</a>
+			<a href="#">로그아웃</a>
+		</div>
+
+		
+		<div id="gnb" class="gnbbox">
+			<nav class="gnb">
+				<ul>
+					<li class="g1 on">
+						<a href="#">회원관리</a>
+						<div class="depth2">
+							<ul>
+								<li class="m1 on arr">
+									<a href="#">회원정보</a>
+									<div class="depth3">
+										<ul>
+											<li class="mm1 on"><a href="#">회원정보</a></li>
+											<li class="mm2"><a href="#">탈퇴요청리스트</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="m2"><a href="#">KYC요청</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="g2">
+						<a href="#">마켓관리</a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#">마켓정보</a></li>
+								<li class="m2"><a href="#">코인정보</a></li>
+								<li class="m3 arr">
+									<a href="#">운용현황</a>
+									<div class="depth3">
+										<ul>
+											<li class="mm1"><a href="#">코인운용현황</a></li>
+											<li class="mm2"><a href="#">운용입출금현황</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="g3">
+						<a href="#">차트/시세정보</a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#">차트관리</a></li>
+								<li class="m2"><a href="#">시세정보관리</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="g4">
+						<a href="#">리포트</a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#">주문</a></li>
+								<li class="m2"><a href="#">입출금</a></li>
+								<li class="m3"><a href="#">트렌젝션</a></li>
+								<li class="m4"><a href="#">이벤트 로그</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="g5">
+						<a href="#">서비스관리</a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#">공지사항</a></li>
+								<li class="m2"><a href="#">1:1 문의</a></li>
+								<li class="m3"><a href="#">FAQ관리</a></li>
+								<li class="m4"><a href="#">SMS</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="g6">
+						<a href="#">시스템</a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#">기본값 설정</a></li>
+								<li class="m2 arr">
+									<a href="#">시스템 이용자관리</a>
+									<div class="depth3">
+										<ul>
+											<li class="mm1"><a href="#">이용자정보</a></li>
+											<li class="mm2"><a href="#">이용자 로그</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="m3"><a href="#">권한관리</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<div id="container" class="container">
+		<section class="sidebar">
+			<h2 class="tit"><span class="i-ico lnb1">회원관리</span></h2>
+			<nav class="lnb depth2">
+				<ul>
+					<li class="m1 arr">
+						<a href="#"><span>회원정보</span></a>
+						<div class="depth3">
+							<ul>
+								<li class="mm1 on"><a href="#"><span>회원정보</span></a></li>
+								<li class="mm2"><a href="#"><span>탈퇴요청리스트</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="m2"><a href="#"><span>KYC요청</span></a></li>
+				</ul>
+			</nav>
+			
+			<button type="button" class="btn_menu"><span class="i-ico sidemenu">사이드메뉴 열기/닫기</span></button>
+		</section>
+		<!-- //sidebar -->
+
+		<div class="path">
+			<ul>
+				<li><span>HOME</span></li>
+				<li><span>회원관리</span></li>
+				<li><strong>KYC 요청</strong></li>
+			</ul>
+		</div><!-- //path -->
+
+		<div class="contents">
+
+			<!-- 탭스타일 -->
+			<div class="tabs ty1">
+				<ul>
+					<li class="on"><a href="#">회원정보</a></li>
+					<li><a href="#">KYC</a></li>
+					<li><a href="#">주문이력</a></li>
+					<li><a href="#">자산현황</a></li>
+					<li><a href="#">입출금 이력</a></li>
+					<li><a href="#">이벤트 로그</a></li>
+				</ul>
+			</div><!-- //tabs -->
+
+			<section class="area_cont">
+
+		
+				<a href="#" class="btn-pk n black" onclick="PopWindow('popup/pop_info.html','newAdmin',1100,600);">팝업팝업팝업</a>
+
+				<!-- 간격스타일 -->
+				<h1 style="font-size:16px;margin-bottom:10px;">[[간격]]</h1>
+				<p>pr10/pb10/pl10,pt10 or mr10/mb10/ml10,mt10 등등 10단위로 (필요시에 사용)</p>
+				<p>pr-mb0 : margin-bottom:60px</p>
+				<p>pr-mb1 : margin-bottom:40px</p>
+				<p>pr-mb2 : margin-bottom:20px</p>
+				
+				<br>
+				<p>정렬은 ta-r / ta-l / ta-c</p>
+				<p>f-l / f-r / clearfix</p>
+				
+				<br>
+				<p>폰트 색상</p>
+				<p>
+					<span class="c-red">c-red</span>
+					<br><span class="c-gray">c-gray</span>
+					<br><span class="c-black">c-black</span>
+					<br><span class="c-ty1">c-ty1</span>
+					<br><span class="c-ty2">c-ty2</span>
+					<br><span class="c-ty3">c-ty3</span>
+				</p>
+
+
+				<hr />
+
+				<!-- 제목스타일 -->
+				<h1 style="font-size:16px;margin-bottom:10px;">[[제목스타일]]</h1>
+				<h2 class="tit_st1">회원정보1</h2>				
+<xmp><h2 class="tit_st1">회원정보1</h2></xmp>
+
+				<div class="mb20"></div>
+
+				<h2 class="tit_st2">회원정보2</h2>		
+<xmp><h2 class="tit_st2">회원정보2</h2></xmp>			
+
+				<div class="mb20"></div>
+
+				<h2 class="tit_st3">기본 설정</h2>
+<xmp><h2 class="tit_st3">기본 설정</h2></xmp>
+
+				<div class="mb20"></div>
+
+				<hr />
+
+
+				<!-- 테이블스타일 -->
+				<h1 style="font-size:16px;margin-bottom:10px;">[[테이블스타일]]</h1>
+
+				<div class="tbl_top">
+					<div class="col">
+						<div class="lft">
+							<div class="txt_radio">
+								<input type="radio" id="radio0101" name="radio01">
+								<label for="radio0101">1일</label>
+						
+								<input type="radio" id="radio0102" name="radio01">
+								<label for="radio0102">15일</label>
+						
+								<input type="radio" id="radio0103" name="radio01">
+								<label for="radio0103">30일</label>
+						
+								<input type="radio" id="radio0104" name="radio01" checked="">
+								<label for="radio0104">60일</label>
+							</div>
+							<div class="inp_cal">
+								<input type="text" class="inp_txt calender datepicker_first" />
+								<span>~</span>
+								<input type="text" class="inp_txt calender datepicker_last" />
+							</div>
+						</div>
+						<div class="rgh">
+							<label for="select01" class="t_label">진행현황</label>
+							<select id="select01" class="select1">
+								<option value="">전체</option>
+								<option value="">대기</option>
+								<option value="">완료</option>
+							</select>
+						
+							<a href="#" class="btn-pk blue vn"><span class="i-ico sch">Search</span></a>
+							<a href="#" class="btn-pk black n btn-c-more"><span class="i-ico more">더보기</span></a>
+						</div>
+					</div>
+					<div class="col view">
+						<select class="select1">
+							<option value="">보안레벨1</option>
+							<option value="">가입완료 회원</option>
+							<option value="">SMS/OPT 인증완료</option>
+						</select>
+						<select class="select1">
+							<option value="">가입완료 회원</option>
+							<option value="">SMS/OPT 인증완료</option>
+						</select>
+						<select class="select1">
+							<option value="">SMS/OPT 인증완료</option>
+						</select>
+					</div>
+					<div class="col">
+						<div class="lft">
+							<div class="pagenation">
+								<ul>
+									<li class="first"><a href="javascript:;">맨앞</a></li>
+									<li class="prev"><a href="javascript:;">이전</a></li>
+									<li class="on"><a href="javascript:;">1</a></li>
+									<li><a href="javascript:;">2</a></li>
+									<li><a href="javascript:;">3</a></li>
+									<li><a href="javascript:;">4</a></li>
+									<li><a href="javascript:;">5</a></li>
+									<li><a href="javascript:;">6</a></li>
+									<li><a href="javascript:;">7</a></li>
+									<li><a href="javascript:;">8</a></li>
+									<li><a href="javascript:;">9</a></li>
+									<li><a href="javascript:;">10</a></li>
+									<li class="next"><a href="javascript:;">다음</a></li>
+									<li class="last"><a href="javascript:;">맨뒤</a></li>
+								</ul>
+
+								<div class="inp">
+									<p>P. <input type="text" class="inp_txt" value="1" /> /35</p>
+								</div>
+							</div><!-- //pagenation -->
+							
+							
+							
+						</div>
+						<div class="rgh">
+							<a href="#" class="btn-pk gray n"><span>삭제</span></a>
+							<a href="#" class="btn-pk black n"><span>등록</span></a>
+							<a href="#" class="btn-pk black n"><span class="i-ico excel">Excel다운로드</span></a>
+						</div>
+					</div>
+				</div>
+<xmp><div class="tbl_top">
+	<div class="col">
+		<div class="lft">
+			<div class="txt_radio">
+				<input type="radio" id="radio0101" name="radio01">
+				<label for="radio0101">1일</label>
+		
+				<input type="radio" id="radio0102" name="radio01">
+				<label for="radio0102">15일</label>
+		
+				<input type="radio" id="radio0103" name="radio01">
+				<label for="radio0103">30일</label>
+		
+				<input type="radio" id="radio0104" name="radio01" checked="">
+				<label for="radio0104">60일</label>
+			</div>
+			<div class="inp_cal">
+				<input type="text" class="inp_txt calender" id="datepicker_first" />
+				<span>~</span>
+				<input type="text" class="inp_txt calender" id="datepicker_last" />
+			</div>
+		</div>
+		<div class="rgh">
+			<label for="select01" class="t_label">진행현황</label>
+			<select id="select01" class="select1">
+				<option value="">전체</option>
+				<option value="">대기</option>
+				<option value="">완료</option>
+			</select>
+		
+			<a href="#" class="btn-pk blue vn"><span class="i-ico sch">Search</span></a>
+			<a href="#" class="btn-pk black n btn-c-more"><span class="i-ico more">더보기</span></a>
+		</div>
+	</div>
+	<div class="col view">
+		<select class="select1">
+			<option value="">보안레벨1</option>
+			<option value="">가입완료 회원</option>
+			<option value="">SMS/OPT 인증완료</option>
+		</select>
+		<select class="select1">
+			<option value="">가입완료 회원</option>
+			<option value="">SMS/OPT 인증완료</option>
+		</select>
+		<select class="select1">
+			<option value="">SMS/OPT 인증완료</option>
+		</select>
+	</div>
+	<div class="col">
+		<div class="lft">
+			<div class="pagenation">
+				<ul>
+					<li class="first"><a href="javascript:;">맨앞</a></li>
+					<li class="prev"><a href="javascript:;">이전</a></li>
+					<li class="on"><a href="javascript:;">1</a></li>
+					<li><a href="javascript:;">2</a></li>
+					<li><a href="javascript:;">3</a></li>
+					<li><a href="javascript:;">4</a></li>
+					<li><a href="javascript:;">5</a></li>
+					<li><a href="javascript:;">6</a></li>
+					<li><a href="javascript:;">7</a></li>
+					<li><a href="javascript:;">8</a></li>
+					<li><a href="javascript:;">9</a></li>
+					<li><a href="javascript:;">10</a></li>
+					<li class="next"><a href="javascript:;">다음</a></li>
+					<li class="last"><a href="javascript:;">맨뒤</a></li>
+				</ul>
+
+				<div class="inp">
+					<p>P. <input type="text" class="inp_txt" value="1" /> /35</p>
+				</div>
+			</div><!-- //pagenation -->
+			
+			
+			
+		</div>
+		<div class="rgh">
+			<a href="#" class="btn-pk gray n"><span>삭제</span></a>
+			<a href="#" class="btn-pk black n"><span>등록</span></a>
+			<a href="#" class="btn-pk black n"><span class="i-ico excel">Excel다운로드</span></a>
+		</div>
+	</div>
+</div></xmp>
+
+				<div class="mb20"></div>
+
+				<div class="tbl_basic ty1">
+					<table>
+						<caption>상세</caption>
+						<colgroup>
+							<col style="width:150px" />
+							<col style="width:40%" />
+							<col style="width:150px" />
+							<col style="width:*" />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">상세내역</th>
+								<td>내용을적어줌됩니다.내용을적어줌됩니다.</td>
+								<th scope="row">상세내역</th>
+								<td>
+									<div class="inp_checkbox">
+										<input type="checkbox" id="checkbox02" name="checkbox02" />
+					<label for="checkbox02"></label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">상세내역</th>
+								<td>내용을적어줌됩니다.내용을적어줌됩니다.</td>
+								<th scope="row">상세내역</th>
+								<td>상세</td>
+							</tr>
+							<tr>
+								<th scope="row">상세내역</th>
+								<td>내용을적어줌됩니다.내용을적어줌됩니다.</td>
+								<th scope="row">상세내역</th>
+								<td>상세</td>
+							</tr>
+							<tr>
+								<th scope="row">상세내역</th>
+								<td>내용을적어줌됩니다.내용을적어줌됩니다.</td>
+								<th scope="row">상세내역</th>
+								<td>상세</td>
+							</tr>
+							<tr>
+								<th scope="row">상세내역</th>
+								<td>내용을적어줌됩니다.내용을적어줌됩니다.</td>
+								<th scope="row">상세내역</th>
+								<td>상세</td>
+							</tr>
+							<tr>
+								<th scope="row">상세내역</th>
+								<td>내용을적어줌됩니다.내용을적어줌됩니다.</td>
+								<th scope="row">상세내역</th>
+								<td>상세</td>
+							</tr>
+							<tr>
+								<th scope="row">상세내역</th>
+								<td>내용을적어줌됩니다.내용을적어줌됩니다.</td>
+								<th scope="row">상세내역</th>
+								<td>상세</td>
+							</tr>
+							<tr>
+								<th scope="row">상세내역</th>
+								<td>내용을적어줌됩니다.내용을적어줌됩니다.</td>
+								<th scope="row">상세내역</th>
+								<td>상세</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+<xmp><div class="tbl_basic ty1">
+	<table>
+		<caption>상세</caption>
+		<colgroup>
+			<col style="width:150px" />
+			<col style="width:40%" />
+			<col style="width:150px" />
+			<col style="width:*" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">상세내역</th>
+				<td>상세</td>
+				<th scope="row">상세내역</th>
+				<td>상세</td>
+			</tr>
+		</tbody>
+	</table>
+</div></xmp>
+
+
+
+				<hr />
+
+
+			
+				<!-- 테이블스타일 -->
+				<h1 style="font-size:16px;margin-bottom:10px;">[[버튼스타일]]</h1>
+
+				<div class="mb5">
+					<a href="#" class="btn-pk n gray">버튼1</a>
+					<a href="#" class="btn-pk n blue">버튼2</a>
+					<a href="#" class="btn-pk n black">버튼3</a>
+					<a href="#" class="btn-pk n gray off">선택불가버튼</a>
+					<a href="#" class="btn-pk n blue off">선택불가버튼</a>
+					<a href="#" class="btn-pk n black off">선택불가버튼</a>
+				</div>
+
+				<div class="mb5">
+					<a href="#" class="btn-pk vn gray">긴버튼</a>
+					<a href="#" class="btn-pk s gray">작은 버튼</a>
+				</div>
+
+				<div class="btn-bot">
+					<a href="#" class="btn-pk n gray">버튼1</a>
+					<a href="#" class="btn-pk n black">버튼1</a>
+				</div>
+
+				<div class="btn_area">
+					<div class="lft">
+						<a href="#" class="btn-pk black n">목록으로</a>
+					</div>
+					<div class="rft">
+						<a href="#" class="btn-pk black n">취소</a>
+						<a href="#" class="btn-pk blue n">저장</a>
+					</div>
+				</div>
+
+				<div class="btn_area">
+					<div class="ta-l">
+						<a href="#" class="btn-pk black n">취소</a>
+						<a href="#" class="btn-pk blue n">저장</a>
+					</div>
+				</div>
+
+
+<xmp><div class="btn-bot"><!-- 테이블 하단 버튼 -->
+	<a href="#" class="btn-pk n gray">버튼1</a>
+	<a href="#" class="btn-pk n black">버튼1</a>
+</div></xmp>
+
+				<hr />
+
+
+				<!-- 인풋스타일 -->
+				<h1 style="font-size:16px;margin-bottom:10px;">[[인풋 스타일]]</h1>
+					
+				
+				<p>w100p 등 클래스 추가하면 %로 width 값 적용(input, select)</p>
+				<input type="text" class="inp_txt" />
+				<select class="select1">
+					<option value="">옵션1</option>
+				</select>
+				<br>
+<xmp><input type="text" class="inp_txt" />
+<select class="select1">
+	<option value="">옵션1</option>
+</select></xmp>
+
+				<br>
+				<div class="mb10"></div>
+
+				<div class="inp_radio">
+					<input type="radio" id="radio0201" name="radiobox03" checked />
+					<label for="radio0201">라디오1</label>
+					<input type="radio" id="radio0202" name="radiobox03" />
+					<label for="radio0202">라디오2</label>
+				</div>
+
+
+				<div class="inp_checkbox">
+					<input type="checkbox" id="checkbox01" name="checkbox01" />
+					<label for="checkbox01">체크박스</label>
+
+					<input type="checkbox" id="checkbox02222" name="checkbox02222" />
+					<label for="checkbox02222"></label>
+				</div>
+
+				<br>
+<xmp><div class="inp_radio">
+	<input type="radio" id="radio0201" name="radiobox03" checked />
+	<label for="radio0201">라디오1</label>
+	<input type="radio" id="radio0202" name="radiobox03" />
+	<label for="radio0202">라디오2</label>
+</div>
+
+
+<div class="inp_checkbox">
+	<input type="checkbox" id="checkbox01" name="checkbox01" />
+	<label for="checkbox01">체크박스</label>
+</div></xmp>
+
+				<div class="mb10"></div>
+
+				<div class="tbl_file_box">
+					<input type="file" name="files" id="filename1" class="file">
+					<label for="filename1" class="btn-pk n blue2">파일업로드</label>
+					<input type="hidden" name="filename1" id="filename1" />
+					<span class="upload-name"><span>filename.jpg</span> <button type="button" class="del-btn">삭제</button></span>
+				</div>
+
+
+<xmp><div class="tbl_file_box">
+	<input type="file" name="files" id="filename1" class="file">
+	<label for="filename1" class="btn-pk n blue2">파일업로드</label>
+	<input type="hidden" name="filename1" id="filename1" />
+	<span class="upload-name"><span>filename.jpg</span> <button type="button" class="del-btn">삭제</button></span>
+</div>
+</xmp>
+		
+			</section><!-- //cont -->
+
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- //container -->
+	
+	<footer id="footer" class="footer">
+		<div class="inr-c">
+			<p class="copy">Copyright &copy; 2018 <span class="c-black">Wizbl.</span> All right reserved.</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+
+
+
+<!-- 로딩이미지 -->
+<div class="wrap_loading">
+	<div class="loading"><img src="images/common/Loading.gif" alt="loading.." /></div>
+</div>
+
+
+</body>
+</html>
