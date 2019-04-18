@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="Author" content="" />
+<title>관리자</title>
+<meta name="Keywords" content="Wizbl" />
+<meta name="Description" content="Wizbl" />
+<meta name="Author" content="" />
+
+<!-- link -->
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+<![endif]-->
+<!-- script -->
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+
+<div id="wrap" class="login">
+
+	<!-- 로그인 -->
+	<section class="area_member login">
+		<header class="header_mem">
+			<div class="logo"><img src="images/common/logo.png" alt="wizbl" /></div>
+			<h1 class="title">로그인</h1>
+		</header>
+
+		<fieldset class="box">
+			<form name="loginFrm" id="loginFrm">
+			<p class="t_error mb10"><span>이미 사용중인 이메일 주소입니다.</span></p>
+
+			<div class="col error"><!-- 에러 -->
+				<div class="n"><input name="email" id="email" type="text" class="inp_txt w100p" placeholder="ID를 입력하세요"></div>
+			</div>
+			<div class="col">
+				<div class="n"><input name="pwd" id="pwd" type="password" class="inp_txt w100p" placeholder="비밀번호를 입력하세요"></div>
+			</div>
+			<div class="col">
+				<div class="n agree ta-r">
+					<input name="save_id" id="save_id" type="checkbox" value="Y">
+					<label for="save_id">아이디 저장</label>
+				</div>
+			</div>
+			<div id="reCAPTCHA_login" class="box_robot"><img src="images/tmp_robot.jpg" alt="" /></div>
+			<input type="hidden" name="recaptcha" id="recaptcha" />
+			<div class="btn-bot ta-c">
+				<a href="#" class="btn-pk b blue w100p mb10">로그인</a>
+				<a href="#" class="btn-pk b blue2 w100p">비밀번호 찾기</a>
+			</div>
+			</form>
+		</fieldset>
+	</section>
+	<!-- //로그인 -->
+	
+</div>
+<!-- //wrap -->
+
+
+</body>
+</html>
