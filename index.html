@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta name="Author" content="" />
+<title>관리자</title>
+<meta name="Keywords" content="Wizbl" />
+<meta name="Description" content="Wizbl" />
+<meta name="Author" content="" />
+
+<!-- link -->
+<link rel="stylesheet" type="text/css" href="css/default.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/popup.css" />
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<script type="text/javascript" src="js/respond.min.js"></script>
+<![endif]-->
+<!-- script -->
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+
+<div id="wrap">
+
+	<header id="header" class="header">
+		<h1 class="logo"><a href="#"><img src="images/common/logo.png" alt="wizbl" /></a></h1>
+				
+		<div class="right">
+			<div class="t1"><span class="i"><img src="images/common/img_mem_thump.jpg" alt="" /></span><span class="t">ABCDEFG (홍길동)</span></div>
+			<a href="javascript:;" onclick="PopWindow('popup/pop_pw.html','newPwd',500,400);">PW수정</a>
+			<a href="#">로그아웃</a>
+		</div>
+
+		
+		<div id="gnb" class="gnbbox">
+			<nav class="gnb">
+				<ul>
+					<li class="g1">
+						<a href="#"><span>회원관리</span></a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#"><span>회원정보</span></a></li>
+								<li class="m2"><a href="#"><span>가맹신청현황</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="g2">
+						<a href="#"><span>거래정보</span></a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#"><span>페이거래현황</span></a></li>
+								<li class="m2"><a href="#"><span>Exchange</span></a></li>
+								<li class="m3"><a href="#"><span>입출금 현황</span></a></li>
+								<li class="m4"><a href="#"><span>가맹점 매출현황</span></a></li>
+								<li class="m5"><a href="#"><span>트랜젝션 내역</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="g3">
+						<a href="#"><span>화폐관리</span></a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#"><span>암호화폐설정</span></a></li>
+								<li class="m2"><a href="#"><span>Exchange 설정</span></a></li>
+								<li class="m3"><a href="#"><span>결제/송금 설정</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="g4">
+						<a href="#"><span>서비스관리</span></a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#"><span>공지사항</span></a></li>
+								<li class="m2"><a href="#"><span>FAQ관리</span></a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="g5">
+						<a href="#"><span>시스템</span></a>
+						<div class="depth2">
+							<ul>
+								<li class="m1"><a href="#"><span>이용자관리</span></a></li>
+								<li class="m2"><a href="#"><span>권한관리</span></a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<div id="container" class="container main">
+		<div class="area_main">
+			<h2 class="tit_st3">대시보드</h2>
+			
+			<div class="box_dtop pr-mb1">
+				<ul>
+					<li>
+						<p class="h">일반회원수</p>
+						<p class="num"><span>5,524</span></p>
+					</li>
+					<li>
+						<p class="h">가맹점수</p>
+						<p class="num"><span>359</span></p>
+					</li>
+					<li>
+						<p class="h">가맹점(대기)</p>
+						<p class="num"><span>12</span></p>
+					</li>
+					<li>
+						<p class="h">금월 수수료</p>
+						<p class="num"><span>562,352</span>(USD)</p>
+					</li>
+					<li>
+						<p class="h">금월 누적 거래액</p>
+						<p class="num"><span>152,562,352152,562,352152,562,352</span>(USD)</p>
+					</li>
+				</ul>
+			</div>
+
+
+			<h3 class="tit_st1">Pay 거래 현황(2019년 3월)</h3>
+			<div class="tbl_basic ty1 pr-mb1">
+				<table>
+					<caption>Pay 거래 현황 상세</caption>
+					<colgroup>
+						<col style="width:25%" />
+						<col style="width:25%" />
+						<col style="width:25%" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">결제<br><strong class="fz-b1">0</strong></th>
+							<th scope="row">Cash 충전<br><strong class="fz-b1">20</strong></th>
+							<th scope="row">송금<br><strong class="fz-b1">0</strong></th>
+							<th scope="row">입금<br><strong class="fz-b1">0</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								어제 : 12
+								<br>주간 : 12
+								<br>월간 : 12
+							</td>
+							<td>
+								어제 : 12
+								<br>주간 : 12
+								<br>월간 : 12
+							</td>
+							<td>
+								어제 : 12
+								<br>주간 : 12
+								<br>월간 : 12
+							</td>
+							<td>
+								어제 : 12
+								<br>주간 : 12
+								<br>월간 : 12
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="tit_st1">암호화폐 거래현황(2019년 3월)</h3>
+			<div class="tbl_basic ty1 pr-mb1">
+				<table>
+					<caption>암호화폐 거래현황 상세</caption>
+					<colgroup>
+						<col style="width:33%" />
+						<col style="width:33%" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">입금<br><strong class="fz-b1">0</strong></th>
+							<th scope="row">출금<br><strong class="fz-b1">0</strong></th>
+							<th scope="row">환전<br><strong class="fz-b1">0</strong></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								어제 : 12
+								<br>주간 : 12
+								<br>월간 : 12
+							</td>
+							<td>
+								어제 : 12
+								<br>주간 : 12
+								<br>월간 : 12
+							</td>
+							<td>
+								어제 : 12
+								<br>주간 : 12
+								<br>월간 : 12
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+
+			<h3 class="tit_st1">매출현황(2019년 3월)</h3>
+			<div class="tbl_basic ty1">
+				<table class="list">
+					<caption>매출현황 상세</caption>
+					<colgroup>
+						<col style="width:8%" />
+						<col style="width:25%" />
+						<col style="width:15%" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">순위</th>
+							<th scope="row">가맹점명</th>
+							<th scope="row">건수</th>
+							<th scope="row">매출액</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>A가맹점</td>
+							<td>25건</td>
+							<td class="ta-r">356,232 WPY</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		
+		</div>
+	</div>
+	<!-- //container -->
+	
+	<footer id="footer" class="footer">
+		<div class="inr-c">
+			<p class="copy">Copyright &copy; 2019 <span class="c-black">Wizbl.</span> All right reserved.</p>
+		</div>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+
+
+
+<!-- 로딩이미지 -->
+<div class="loading">
+  <div class="loading-bar"></div><div class="loading-bar"></div><div class="loading-bar"></div><div class="loading-bar"></div>
+</div>
+
+</body>
+</html>
